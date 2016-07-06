@@ -1,0 +1,508 @@
+body{
+	position:relative;
+	font-family: "Courier New", Courier, monospace;
+	overflow-x: hidden;
+	background-image: url(../Images/fondoBody.png);
+	background-attachment: fixed;
+}
+
+header{
+	width: 1265px;
+	height: 595px;
+	background-image: url(../Images/FondoHeader.jpg);
+	background-attachment: fixed;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 150px 50px rgba(0,0,0,.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow:hidden;
+}
+@media screen and (max-width: 700px){
+	header{
+		width: 100%;
+	}
+}
+
+/*Header*/
+
+#header-logo{
+	width: 800px;
+	height: 182px;
+	background-image:url(../Images/NovaLogo.png);
+	background-size:contain;
+	box-shadow: 0px 120px 35px -80px rgba(0,0,0,.6);
+	background-repeat: no-repeat;
+}
+
+/* Menu BAr */
+#nav-bar-nav{
+	width: 110%;
+	margin-left: -10px;
+	height: 90px;
+	border: 2px solid gray;
+	border-radius: 0px;
+	border-left: none;
+	border-right: none;
+	margin-top: 30px;
+	background-color: rgba(255,255,255,.7);
+	z-index: 5;
+}
+	#nav-bar-nav ul{
+		display: flex;
+	}
+
+	#nav-bar-nav li{
+		list-style: none;
+		margin: 5px 35px 0px 35px;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+		font-weight: 700;
+	}
+
+	#nav-bar-nav li:hover{
+		box-shadow: 0px 40px 13px -20px rgba(0,0,0,.5);
+		transform: translate(0px, -10px);
+	}
+
+	#nav-bar-nav a{
+		text-decoration: none;
+		color: black;
+		border-radius: 10px;
+		padding: 15px 30px;
+		background-image: url(../Images/FondoHeader.jpg);
+		background-size: contain;
+		position: relative;
+		top: 15px;
+		box-shadow: 0px 20px 13px -10px rgba(0,0,0,.7);
+		transition: all .3s ease-in-out;
+	}
+	#nav-bar-nav a:hover{
+		box-shadow: 0px 40px 13px -20px rgba(0,0,0,.5);
+		transform: translate(0px, -20px);
+	}
+
+	.fixed{
+		position: fixed;
+		top: -30px;
+
+	}
+	.addHeight{
+		height: 125px;
+	}
+
+/* Home */
+
+#section-part{
+	display: flex;
+	justify-content: center;
+	height: 320px;
+}
+@media screen and (max-width: 1000px){
+	#section-part{
+		width: 100%;
+		height: 450px;
+	}
+}
+
+#section-part div{
+	border: solid black 2px;
+	margin: 50px 20px 50px 20px;
+	padding: 10px;
+	width: 25%;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	transition: all .8s ease-in-out;
+}
+#section-part a{
+	text-decoration: none;
+	text-align: center;
+	color: darkblue;
+	font-weight: bold;
+	transition: all .3s ease-in-out;
+}
+#section-part a:hover{
+	transform: translate(0px, -10px);
+}
+#post1{
+	transform: translate(-500px, 300px);
+}
+#post3{
+	transform: translate(500px, 300px);
+}
+
+/*sidenav*/
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(100,100,100,.7);
+		border-radius: 10px;
+    overflow-x: hidden;
+    transition: 0.5s;
+		padding-top: 15px;}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+		font-size: 18px;
+    color: white;
+    display: block;
+		transition: all 0.3s ease-in-out;
+		font-size: 18px;
+}
+.sidenav a:hover{
+    color: black;
+		transform: translate(0px, -5px);
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/*Store Shirts for sale*/
+#div-store{
+	display:flex;
+	justify-content: center;
+	background-size:contain;
+	background-attachment:fixed;
+}
+#table-store figure{
+	overflow: hidden;
+	cursor: pointer;
+	background-color: rgba(192,192,192,.1);
+	border-radius: 10px;
+}
+
+#table-store figure img{
+	height:100%;
+	width:100%;
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+#table-store figcaption{
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(150,70,70,.6);
+	border-radius: 5px;
+	left: 0%;
+	transition: all .3s ease-in-out;
+	color: white;
+}
+
+#table-store img:hover{
+	transform: scale(1.1);
+}
+#table-store img:hover > #table-store figure figcaption{
+	background-color: rgba(0,0,0,.9);
+}
+
+/*Members section*/
+
+#member-granddad{
+	background-image: url(../Images/GuitarPlayer.jpg);
+	background-attachment: fixed;
+	background-position: center 95px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 0 auto;
+	height: 600px;
+	width:600px;
+	overflow:hidden;
+}
+	@media screen and (max-width: 1250px){
+		#member-granddad{
+			height:400px;
+			width:400px;
+		}
+	}
+	@media screen and (max-width: 600px){
+		#member-granddad{
+			height:250px;
+			width:250px;
+		}
+	}
+
+#member-dad{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+#member-son{
+	height: 100%;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#member-son text , #member-son h1{
+	color: white;
+}
+
+#member-granddad2{
+	background-image: url(../Images/Drummer.jpg);
+	background-attachment: fixed;
+	background-position: center 95px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 0 auto;
+	height: 600px;
+	width:600px;
+	overflow:hidden;
+}
+	@media screen and (max-width: 1250px){
+		#member-granddad2{
+			height:400px;
+			width:400px;
+		}
+	}
+	@media screen and (max-width: 600px){
+		#member-granddad2{
+			height:250px;
+			width:250px;
+		}
+	}
+#member-granddad3{
+	background-image: url(../Images/Singer.jpg);
+	background-attachment: fixed;
+	background-position: center 95px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 0 auto;
+	height: 600px;
+	width:600px;
+	overflow:hidden;
+}
+	@media screen and (max-width: 1250px){
+		#member-granddad3{
+			height:400px;
+			width:400px;
+		}
+	}
+	@media screen and (max-width: 600px){
+		#member-granddad3{
+			height:250px;
+			width:250px;
+		}
+	}
+
+#member-granddad4{
+	background-image: url(../Images/Bass.jpg);
+	background-attachment: fixed;
+	background-position: center 95px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 0 auto;
+	height: 600px;
+	width:600px;
+	overflow:hidden;
+}
+	@media screen and (max-width: 1250px){
+		#member-granddad4{
+			height:400px;
+			width:400px;
+		}
+	}
+	@media screen and (max-width: 600px){
+		#member-granddad4{
+			height:250px;
+			width:250px;
+		}
+	}
+
+#container{
+}
+
+/*Footer Bottom*/
+
+#footer-bottom{
+	margin-top: 50px;
+}
+
+#footer-bottom a{
+	text-decoration: none;
+	color: darkred;
+}
+
+#footer-bottom h4{
+	margin-left: 50px;
+}
+
+/*Instruments*/
+
+#div-instrument{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#instrument1, #instrument2,#instrument3,#instrument4{
+	background-size: contain;
+	position: relative;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 250px;
+	overflow: hidden;
+}
+#instrument1{
+	background-image: url(../Images/Guitar1.png);
+	//background-color: rgba(192,192,192,.2);
+}
+#instrument2{
+	background-image: url(../Images/Drums.png);
+	//background-color: rgba(192,192,192,.2);
+}
+#instrument3{
+	background-image: url(../Images/BassInstrument.png);
+	//background-color: rgba(192,192,192,.2);
+}
+#instrument4{
+	background-image: url(../Images/Guitar2.png);
+	//background-color: rgba(192,192,192,.2);
+}
+
+#instrument1:hover > #instrument-background1,
+#instrument2:hover > #instrument-background2,
+#instrument3:hover > #instrument-background3,
+#instrument4:hover > #instrument-background4{
+	transform: translate(0px, 0px);
+}
+
+#instrument-background1, #instrument-background2, #instrument-background3, #instrument-background4{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translate(0px, 600px);
+	transition: all .3s ease-in-out;
+}
+#instrument-background1{
+	background-color: rgba(0,50,150,.4);
+}
+#instrument-background2{
+	background-color: rgba(150,50,0,.4);
+}
+#instrument-background3{
+	background-color: rgba(189,183,107,.4);
+}
+#instrument-background4{
+	background-color: rgba(50,150,50,.4);
+}
+#instrument-background1 h1, #instrument-background1 text,
+#instrument-background2 h1, #instrument-background2 text,
+#instrument-background3 h1, #instrument-background3 text,
+#instrument-background4 h1, #instrument-background4 text{
+	color: white;
+	text-align: center;
+	margin: 0px 15px;
+}
+
+#div-low-instrument{
+	position: relative;
+	top: 50px;
+	width: 1000px;
+	height: 563px;
+	margin: 0 auto;
+	background-image: url(../Images/ConcertImage.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	background-size: contain;
+	background-color: rgba(192,192,192,.3);
+}
+
+/*Gallery edition*/
+
+#gallery-div{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#gallery-div img{
+	margin-top: 50px;
+	width: 80%;
+	transition: all .5s ease-in-out;
+	border-radius: 30px;
+	border: solid black 15px;
+}
+
+#gallery-div img:hover{
+	-webkit-filter: sepia(100%);
+	transform: scale(1.02);
+}
+
+#gallery-main h1{
+	text-align: center;
+	margin-top: 50px;
+	color: darkred;
+}
+
+/*Album section*/
+
+#album-main{
+
+	margin-top: 50px;
+	width: 85%;
+	margin: 0 auto;
+	background-color:rgba(0,0,0,.85);
+	border-radius: 20px;
+	height:auto;
+}
+
+#album-main h1{
+	position: relative;
+	color: white;
+	left: 45px;
+	top: 20px;
+}
+
+#album-table figure{
+	position: relative;
+
+}
+#album-table img{
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	border: solid white 2px;
+	-webkit-filter: grayscale(90%);
+	transition: all .3s ease-in-out;
+}
+
+#album-table img:hover{
+
+	-webkit-filter: grayscale(0%);
+	border: solid gray 2px;
+
+}
+
+#album-table figcaption{
+	font-weight: bold;
+	position: absolute;
+	color: white;
+	left: 10px;
+	bottom: 10px;
+}
