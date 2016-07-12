@@ -48,13 +48,43 @@ header{
 	background-color: rgba(255,255,255,.7);
 	z-index: 5;
 }
+#header-extra{
+	display: none;
+}
 	#nav-bar-nav ul{
 		display: flex;
+		margin-right: 10%;
+
 	}
+@media screen and (max-width: 850px){
+	#nav-bar-nav ul{
+		margin-right: 50%;
+		margin-left: -6%;
+	}
+}
+@media screen and (max-width: 1000px){
+	#nav-bar-nav ul{
+		margin-right: 25%;
+	}
+}
+@media screen and (max-width: 750px){
+	#nav-bar-nav ul{
+		display: none;
+	}
+	#nav-bar-nav{
+		display: none;
+	}
+	#header-secondary{
+		display: none;
+	}
+	#header-extra{
+		display: block;
+	}
+}
 
 	#nav-bar-nav li{
 		list-style: none;
-		margin: 5px 35px 0px 35px;
+		margin: 5px 3% 0px 3%;
 		cursor: pointer;
 		transition: all .3s ease-in-out;
 		font-weight: 700;

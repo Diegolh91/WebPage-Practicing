@@ -7,6 +7,11 @@ $(document).ready(function(){
 		$('#container').load("Documents/"+page+".html");
 		return false;
 	});
+	$('#mySidenav a').click(function(){
+		var page = $(this).attr('href');
+		$('#container').load("Documents/"+page+".html");
+		return false;
+	});
 
 
 	var menuTop = $("#nav-bar-nav").offset().top;
@@ -50,7 +55,7 @@ $(document).ready(function(){
 			});
 		};
 
-		
+
 
 	});
 
